@@ -7,7 +7,6 @@ const install = (Vue:any,opts = {}) =>{
   //@ts-ignore
   if (install.installed) return;
   components.forEach((component) => {
-    console.log(component)
     Vue.component(component.name, component);
   });
 }
